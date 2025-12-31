@@ -6,7 +6,9 @@
     <meta name="author" content="Kadir Nuhovic" />
     <title>IT Akademija</title>
     <style>
-        a { text-decoration: none; }
+      a {
+        text-decoration: none;
+      }
     </style>
   </head>
   <body>
@@ -47,37 +49,128 @@
     <a href="#"><font color="#999">Men</font></a> &gt;
     <font color="#999">Shirt</font>
     <!-- Ovde dolazi glavni sadrzaj tjst slike shop itdd itdd-->
-    <hr/>
-
+    <table width="50%" align="center" cellspacing="15">
+      <tr>
+        <td>
+          <label for="Firstname">First Name:</label>
+          <input type="text" id="Firstname" name="Firstname" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="Password">Password:</label>
+          <input type="password" id="Password" name="Password" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="number">Number:</label>
+          <input type="number" id="age" name="age" min="14" max="120" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="range" name="experience" id="exp" />
+          <label for="exp">Iskustvo u programiranju:</label>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="range" name="rating" min="0" max="5" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="favColor">Omiljena boja:</label>
+          <input type="color" id="favColor" name="favColor" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>Pol:</p>
+          <input type="radio" id="male" name="gender" value="male" />
+          <label for="male">Muškarac</label>
+          <input type="radio" id="women" name="gender" value="women" />
+          <label for="women">Žena</label>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="checkbox" id="teres" name="teres" required />
+          <label for="teres">Prihvatam uslove</label>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="checkbox" id="news" name="news" checked />
+          <label for="news">Newsletter</label>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <form action="upload.php" method="post">
+            
+            <label for="avatar">Profilna slika</label>
+            <input type="file" id="avatar" name="avatar" />
+            <button type="submit">Upload</button>
+          </form>
+        </td>
+      </tr>
+    </table>
+    <hr />
     <table width="100%">
-<tr>
-    <td width="33%">
-        <font size="4"><b>Women</b></font><br/><br/>
-        <font size="3">
-            <a href="#"><font color="#666">Dresses</font></a><br/><br/>
-            <a href="#"><font color="#666">Tops</font></a><br/><br/>
-            <a href="#"><font color="#666">Shorts</font></a><br/><br/>
-            <a href="#"><font color="#666">Jackets</font></a><br/><br/>
-            <a href="#"><font color="#666">Caps</font></a><br/><br/>
-            <a href="#"><font color="#666">Accessories</font></a><br/><br/>
-        </font>
-    </td>
-    <td width="33%"> <font size="4"><b>Customer support</b></font><br/><br/>
-        <font size="3">
-            <a href="#"><font color="#666">Dresses</font></a><br/><br/>
-            <a href="#"><font color="#666">Tops</font></a><br/><br/>
-            <a href="#"><font color="#666">Shorts</font></a><br/><br/>
-            <a href="#"><font color="#666">Jackets</font></a><br/><br/>
-            
-        </font></td>
-    <td width="33%"> <font size="4"><b>Informations</b></font><br/><br/>
-        <font size="3">
-            <a href="#"><font color="#666">Dresses</font></a><br/><br/>
-            <a href="#"><font color="#666">Tops</font></a><br/><br/>
-            <a href="#"><font color="#666">Shorts</font></a><br/><br/>
-            
-        </font></td>
-</tr>
+      <tr>
+        <td width="33%">
+          <font size="4"><b>Women</b></font
+          ><br /><br />
+          <font size="3">
+            <a href="#"><font color="#666">Dresses</font></a
+            ><br /><br />
+            <a href="#"><font color="#666">Tops</font></a
+            ><br /><br />
+            <a href="#"><font color="#666">Shorts</font></a
+            ><br /><br />
+            <a href="#"><font color="#666">Jackets</font></a
+            ><br /><br />
+            <a href="#"><font color="#666">Caps</font></a
+            ><br /><br />
+            <a href="#"><font color="#666">Accessories</font></a
+            ><br /><br />
+          </font>
+        </td>
+        <td width="33%">
+          <font size="4"><b>Customer support</b></font
+          ><br /><br />
+          <font size="3">
+            <a href="#"><font color="#666">Dresses</font></a
+            ><br /><br />
+            <a href="#"><font color="#666">Tops</font></a
+            ><br /><br />
+            <a href="#"><font color="#666">Shorts</font></a
+            ><br /><br />
+            <a href="#"><font color="#666">Jackets</font></a
+            ><br /><br />
+          </font>
+        </td>
+        <td width="33%">
+          <font size="4"><b>Informations</b></font
+          ><br /><br />
+          <font size="3">
+            <a href="#"><font color="#666">Dresses</font></a
+            ><br /><br />
+            <a href="#"><font color="#666">Tops</font></a
+            ><br /><br />
+            <a href="#"><font color="#666">Shorts</font></a
+            ><br /><br />
+          </font>
+        </td>
+      </tr>
     </table>
   </body>
 </html>
