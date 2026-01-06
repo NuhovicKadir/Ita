@@ -2,67 +2,150 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="description "
-      content="Opis stranice koju ce citati Robot radi indeksiranja u WEB pretrazivac"
-    />
-    <meta name="keywords" content="e-commerce buy-online,buy,shopping" />
-    <meta name="author" content="Kadir Nuhovic" />
-    <title>Nasa prva e-commerce web aplikac</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nas prvi CSS file</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <style>
+      body {
+        margin: 0px;
+        background: #cccfcd;
+      }
+      .main {
+        margin: 0 auto 0 auto;
+        width: 100%;
+        height: 100vh;
+      }
+     
+
+      .header {
+        max-width: 1200px;
+        width: 100%;
+        margin:  auto;
+        background: black;
+        height: 110px;
+      }
+       .black-header {
+        background: black;
+      }
+      .logo-section {
+        margin: 0;
+      }
+      .logo-section{
+       width: 100%;
+        padding-top:36px;   
+      }.logo, .search, .actions {
+        display: inline-block;
+        vertical-align: middle;
+        
+      }
+      .search {
+  width: 60%;
+  position: relative;
+  display: inline-block;
+  margin-left: 40px;
+}
+.search-box {
+  height: 44px;
+  border-radius: 24px;
+  box-sizing: border-box;
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 50px;
+  margin-left: 0;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+.search-btn {
+  width: 44px;
+  height: 44px;
+  background: #ffc220;
+  border-radius: 100%;
+  border: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.search-btn:hover {
+  background: #e6ac1c;
+}
+.material-symbols-outlined {
+  color: white;
+  font-size: 24px;
+  margin: 0;
+}
+.actions{
+  color: white;
+  display: inline-block;
+
+}
+.action-item{
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 24px;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: sans-serif;
+
+  
+}
+.action-text{
+  display: inline-block;
+  margin-left:8px;
+  height: 30px;
+  vertical-align: middle;
+}
+.header-box{
+  background: #a8a7a5;
+  height: 60px;
+  width: 100%;
+ display: inline-block;
+}
+.box-item-icon{
+  color: #000;
+}
+      </style>
   </head>
-
   <body>
-    <!-- Ovo je HTML komentar -->
-    <h1>Test 1</h1>
-    <h2>Test 2</h2>
-    <h3>Test 3</h3>
-    <h4>Test 4</h4>
-    <h5>Test 5</h5>
-    <h6>Test 6</h6>
-    <p>Ovo je nasa prva e-commerce web aplikacija.</p>
-    <br />
-    <p>Ovde je jedna rec <strong>Bold</strong> <em>Italic</em></p>
-    <p>Ovde je jedna rec <b>Bold</b> <i>Italic</i></p>
-
-    <ul>
-      <li>First</li>
-      <li>Second</li>
-      <li>Third</li>
-    </ul>
-    <ol type="I">
-      <li><a href="https://google.com">First</a></li>
-      <!--Ako bi hteli na kontakt.html onda a="kontakt.html"></a>-->
-      <li>Second</li>
-      <li>Third</li>
-    </ol >
-    <dl>
-      <dt>Primer</dt>
-      <dd>Opis primera</dd>
-    </dl>
-    <dl>
-    
-      <dt>Primer</dt>
-      <dd>Opis primera</dd>
-    </dl>
-    
-  <table border="1">
-    <tr>
-      <th>Ime</th>
-      <th>Datum</th>
-      <th>Hobi</th>
-      <th>Telefon</th>
-    </tr>
-    <tr>
-      <td>Jhon Doe</td>
-      <td>12.1.2004</td>
-      <td>Football</td>
-      <td>+381 4141414</td>
-    </tr>
-  </table>
-  
-  
-  
-  
-  
+    <div class="main">
+      <div class="black-header">
+        <div class="header">
+          <div class="logo-section">
+            <div class="logo">
+                <img src="Logo/gigatron.png" alt="Logo">
+          </div>
+         <div class="search">
+  <input type="text" placeholder="Pretrazite sve od A do S" class="search-box"/>
+  <button class="search-btn" type="button">
+    <span class="material-symbols-outlined">search</span>
+  </button>
+</div>
+          <div class="actions">
+           <div class="action-item">
+             <span class="material-symbols-outlined action-item-icon">account_circle</span>
+             <div class="action-text">Prijava</div>
+           </div>
+            <div class="action-item">
+             <span class="material-symbols-outlined action-item-icon">shopping_cart</span>
+             <div class="action-text">Korpa</div>
+           </div>   
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="header-box">
+          <span class="material-symbols-outlined box-item-icon">menu</span>
+          <div class="box-proizvodi">Proizvodi
+             
+          </div>
+        </div>
+      </div>
+      <div class="footer"></div>
+    </div>
   </body>
 </html>
